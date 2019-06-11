@@ -1,0 +1,157 @@
+﻿<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Travel Website</title>
+<link rel="stylesheet" href="../css/style1.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-----NavigationBar----->
+<section id="nav-bar">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="../index.html"><i class="fa fa-suitcase" aria-hidden="true"> TRAVEL NAMSAI</i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="../index.html"><i class="fa fa-home" aria-hidden="true"> Home</i></a>
+      </li>
+      <li class="nav-item">
+		<a class="nav-link" href="../index.html#destination"><i class="fa fa-globe" aria-hidden="true"> Destination</i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#activities"><i class="fa fa-tasks" aria-hidden="true"> Activity</i></a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="../index.html#gallery"><i class="fa fa-picture-o" aria-hidden="true"> Gallery</i></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="../index.html#about"><i class="fa fa-user" aria-hidden="true"> About</i></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="../index.html#contact"><i class="fa fa-envelope" aria-hidden="true"> Contact</i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>
+<!------Reach------>
+<div class="container">
+<p><h1><u>How to Reach</u></h1></p>
+<section id="activities">
+<div class="row activities">
+<div class="col-md-4 text-center">
+<div class="icon">
+<i class="fa fa-plane"></i>
+</div>
+<h3>Flight</h3>
+<p>The nearest airport is Mohanbari (Dibrugarh) airport situated in Assam at 123kms from Namsai. 
+Cabs can be availed on arrival from Mohanbari to travel to Namsai.</p>
+</div>
+<div class="col-md-4 text-center">
+<div class="icon">
+<i class="fa fa-train"></i>
+</div>
+<h3>Train</h3>
+<p>The nearest railway station is the ‘New Tinsukia Junction’ which is situated in Assam and at just 79.7 kms from Namsai.
+Cabs and buses can be availed from Tinsukia to travel to Namsai.</p>
+</div>
+<div class="col-md-4 text-center">
+<div class="icon">
+<i class="fa fa-bus"></i>
+</div>
+<h3>Bus</h3>
+<p>Namsai is well connected by road with the neighbouring towns of Assam. Daily day and night bus services are available from
+Namsai to Tinsukia, Guwahati, Siliguri and Itanagar. Cabs or Taxis can also be availed.</p>
+</div>
+</section>
+<p><h2><u>Things to keep in mind before Travelling</u></h2></p>
+<li>The Inner Line Permit(ILP) is required for both domestic and foreign tourists to visit Arunachal Pradesh. 
+Domestic visitors can obtain ILP by applying online or by visiting the regional offices of Arunachal Government. 
+ILP on arrival facility is also available in some selected railway stations.</li>
+<li>Foreign Tourist visiting Arunachal Pradesh shall have to pay USD 50 per head as Royalty to the of Govt of 
+Arunachal Pradesh and Application for PAP are to be applied through local approved tour operators only.</li>
+<li>Tourist can avail their Inner Line Permit(ILP) online at Arunachal Govt.Official Website.<a href="https://arunachalilp.com/">www.arunachalilp.com</a></li>
+</br>
+<a href="index2.html" class="btn btn-primary">Previous</a></button>
+</div>
+<br>
+<br>
+<a href="javascript:void(0)" class="cd-top cd-is-visible" title="Go to Top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  jQuery(document).ready(function(jQuery){
+  var isExternal = function(url) {
+     return !(location.href.replace("http://", "").replace("https:///", "").split("../index.html")[0] === url.replace("http://", "").replace("https:///", "").split("../index.html")[0]);
+  }
+var comp = new RegExp(location.host);
+jQuery('a').each(function(){
+ if(!comp.test(jQuery(this).attr('href'))){
+   var href = jQuery(this).attr('href');
+     if(typeof href == 'undefined' ){
+        jQuery(this).attr('href','javascript:void(0)');
+        href = '#';
+     }
+     if(href.indexOf('://') > 0 || href.indexOf('//') === 0){
+        if(href!='javascript:void(0);' &&  !href.match("/^\/[a-z0-9]+jQuery/i") && href!='#'  && href!='/' && href!='' && !jQuery(this).hasClass('fancybox.iframe') && !jQuery(this).hasClass('fancybox')){
+        jQuery(this).prop('title', 'External site that opens in a new window');
+         jQuery(this).prop('target', '_blank');
+        }
+     }
+}
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+var offset = 200,
+  offset_opacity = 500,
+  scroll_top_duration = 300,
+  $back_to_top = jQuery('.cd-top');
+jQuery(window).scroll(function(){
+  ( jQuery(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+  if( jQuery(this).scrollTop() > offset_opacity ) {
+    $back_to_top.addClass('cd-fade-out');
+  }
+});
+$back_to_top.on('click', function(event){
+  event.preventDefault();
+  jQuery('body,html').animate({
+    scrollTop: 0 ,
+    }, scroll_top_duration
+  );
+});
+
+});
+</script>
+<!-------Footer------->
+<section id="footer">
+<footer role="contentinfo">
+<div class="container text-center">
+<nav class="global">
+<ul>
+<li><a href="../Privacy_policy/index.html">PRIVACY POLICY</a></li>
+<li><a href="../index.html#contact">CONTACT</a></li>
+<li><a href="../index.html#gallery">GALLERY</a></li></ul>
+</nav>
+Content owned by Travel Namsai<br>Developed by Bittu Sonar <br><strong>&copy;Travel Namsai <script type="text/JavaScript">
+document.write(new Date().getFullYear());
+</script></strong>
+</div>
+</section>
+<!-------Footer End------->
+<script src="js/smooth-scroll.js"></script>
+<script>
+var scroll=new SmoothScroll('a[href*="#"]');
+</script>
+<script>
+document.addEventListener('contextmenu',function(event){
+event.preventDefault();
+})
+</script>
+</body>
+</html>

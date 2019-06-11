@@ -1,0 +1,155 @@
+﻿<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Travel Website</title>
+<link rel="stylesheet" href="../css/style1.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-----NavigationBar----->
+<section id="nav-bar">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="../index.html"><i class="fa fa-suitcase" aria-hidden="true"> TRAVEL NAMSAI</i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+       <a class="nav-link" href="../index.html"><i class="fa fa-home" aria-hidden="true"> Home</i></a>
+      </li>
+      <li class="nav-item">
+		<a class="nav-link" href="../index.html#destination"><i class="fa fa-globe" aria-hidden="true"> Destination</i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#activities"><i class="fa fa-tasks" aria-hidden="true"> Activity</i></a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="../index.html#gallery"><i class="fa fa-picture-o" aria-hidden="true"> Gallery</i></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="../index.html#about"><i class="fa fa-user" aria-hidden="true"> About</i></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="../index.html#contact"><i class="fa fa-envelope" aria-hidden="true"> Contact</i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>
+<!------Destination------>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<br>
+ <p><h1><u>Nearby places outside Namsai district</u></h1></p> 
+  <h4><li>Parshuram Kund,Lohit</h4>
+      <img src="../Destinations/images/pic9.jpg" class="d-block img-fluid">
+  <br>
+  <p>Parshuram Kund is situated in the lower reaches to the River Lohit. It is a religious
+  place visited by people from all over the country during the Makar Sankranti for a holy dip. 
+  It is believed that taking a dip in the holy water of this lake cleanses one from their sin. As recorded 
+  in the Kalika Purana that it was here the sage Parshuram washed away his sin of matricide. Religious people,
+  saints come to this Kund on Makar Sankranti which falls on the 14th January every year.It is recorded that over 
+  70,000 devotees and sages take holy dip its water.</p>
+  <h4><li>Glow Lake,Wakro,Lohit</h4>
+      <img src="../Destinations/images/pic10.jpg" class="d-block img-fluid">
+  <br>
+  <p>Glow Lake is located in Wakro circle of Lohit district. It is a beautiful spot with
+  background of snow clad mountains and rich flora and fauna in and around the lake. It covers
+  an area of about 8 square kilometers at a height of about 5000 ft. above sea level. The nearest
+  road point is near town village on Chongkham-Wakro road from where one has to start trekking for 
+  the lake. Owing to absence of proper road, it becomes an adventure trips to the lake. The villages
+  with a backdrop of hills in the distance, the rivers and its banks, the tea gardens, the vast green
+  fields, the monasteries etc are all sights to behold and the hospitality of the local people and their
+  festival etc have to be experienced to be truly appreciated.</p>
+  <h4><li>Digaru Eco Resort,Digaru,Lohit</h4>
+      <img src="../Destinations/images/pic11.jpg" class="d-block img-fluid">
+  <br>
+  <p>Digaru Eco Resort is located in Tezu circle of Lohit district.It's a beautiful place with river and surrounding flora & fauna.
+ This place has small hut like place where you could have your food and you if prefer better view to eat then they provide places in the middle
+ of the flowing water where you could have a nice view along with food. It is a place where you can go with family and have a chill time.
+ This place is at a distance of 42.5km from Namsai District.</p>
+</div>
+</div>
+<a href="index1.html" class="btn btn-primary">Previous</a></button>
+<a href="index3.html" class="btn btn-primary">Next</a></button>
+</div>
+<br>
+<br>
+<a href="javascript:void(0)" class="cd-top cd-is-visible" title="Go to Top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  jQuery(document).ready(function(jQuery){
+  var isExternal = function(url) {
+     return !(location.href.replace("http://", "").replace("https:///", "").split("../index.html")[0] === url.replace("http://", "").replace("https:///", "").split("../index.html")[0]);
+  }
+var comp = new RegExp(location.host);
+jQuery('a').each(function(){
+ if(!comp.test(jQuery(this).attr('href'))){
+   var href = jQuery(this).attr('href');
+     if(typeof href == 'undefined' ){
+        jQuery(this).attr('href','javascript:void(0)');
+        href = '#';
+     }
+     if(href.indexOf('://') > 0 || href.indexOf('//') === 0){
+        if(href!='javascript:void(0);' &&  !href.match("/^\/[a-z0-9]+jQuery/i") && href!='#'  && href!='/' && href!='' && !jQuery(this).hasClass('fancybox.iframe') && !jQuery(this).hasClass('fancybox')){
+        jQuery(this).prop('title', 'External site that opens in a new window');
+         jQuery(this).prop('target', '_blank');
+        }
+     }
+}
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+var offset = 300,
+  offset_opacity = 1200,
+  scroll_top_duration = 700,
+  $back_to_top = jQuery('.cd-top');
+jQuery(window).scroll(function(){
+  ( jQuery(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+  if( jQuery(this).scrollTop() > offset_opacity ) {
+    $back_to_top.addClass('cd-fade-out');
+  }
+});
+$back_to_top.on('click', function(event){
+  event.preventDefault();
+  jQuery('body,html').animate({
+    scrollTop: 0 ,
+    }, scroll_top_duration
+  );
+});
+
+});
+</script>
+<!-------Footer------->
+<section id="footer">
+<footer role="contentinfo">
+<div class="container text-center">
+<nav class="global">
+<ul>
+<li><a href="../Privacy_policy/index.html">PRIVACY POLICY</a></li>
+<li><a href="../index.html#contact">CONTACT</a></li>
+<li><a href="../index.html#gallery">GALLERY</a></li></ul>
+</nav>
+Content owned by Travel Namsai<br>Developed by Bittu Sonar <br><strong>&copy;Travel Namsai <script type="text/JavaScript">
+document.write(new Date().getFullYear());
+</script></strong>
+</div>
+</section>
+<!-------Footer End------->
+<script src="js/smooth-scroll.js"></script>
+<script>
+var scroll=new SmoothScroll('a[href*="#"]');
+</script>
+<script>
+document.addEventListener('contextmenu',function(event){
+event.preventDefault();
+})
+</script>
+</body>
+</html>

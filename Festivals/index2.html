@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Travel Website</title>
+<link rel="stylesheet" href="../css/style2.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-----NavigationBar----->
+<section id="nav-bar">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="../index.html"><i class="fa fa-suitcase" aria-hidden="true"> TRAVEL NAMSAI</i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+       <a class="nav-link" href="../index.html"><i class="fa fa-home" aria-hidden="true"> Home</i></a>
+      </li>
+      <li class="nav-item">
+		<a class="nav-link" href="../index.html#destination"><i class="fa fa-globe" aria-hidden="true"> Destination</i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#activities"><i class="fa fa-tasks" aria-hidden="true"> Activity</i></a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="../index.html#gallery"><i class="fa fa-picture-o" aria-hidden="true"> Gallery</i></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="../index.html#about"><i class="fa fa-user" aria-hidden="true"> About</i></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="../index.html#contact"><i class="fa fa-envelope" aria-hidden="true"> Contact</i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>
+<!------Festivals------>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<br>
+<h4><li>Shapawng Yawng Manau Poi</h4>
+<img src="../Festivals/images/fest12.jpg" class="d-block img-fluid">
+<p><br>Shapawng Yawng Manau Poi is an annual festival of Singpho tribe of Arunachal Pradesh.Shapawng Yawng festival is also the most important festival of Singpho
+(Jinghpaw) community.Also known as Manau Poi,it is the national festival of the Kachins,a term for Singphos residing in Myanmar.</p>
+<p>Shapawng Yawng is the forefather of the Singphos. The word 'Poi' means Festival 'Manau' means Dance,thus Shapawng Yawng Manau Poi stands for Dance Festival
+in honour of Shapawng Yawng.The Festival is usually celebrated between 12th to 15th February,though 14th February is often a commom day of celebration.</p>
+<p>The festival is primarily organized to show the varied and rich culture,costumes and exotic flora and fauna of vast Arunachal Pradesh.At the same time is is
+also an effort to preserve,protect and promote the age old cultural heritage of this small tribal population.</p>
+<h4><li>Poi LuFra (Buddha Rupa Danna)</h4>
+<p>It is a ritual of offering of the sacred Buddha images. For a pious Khamti offering of sacred Buddha image is one the most wholesome offerings.
+It is considered that the merit accruing out of offering of sacred Buddha image is enormous and hence ceremony is conducted with great devotion and conviction.
+Besides the relatives, people in large numbers are invited by the host to share the merit of Buddha Rupa Danna. 
+One feels it fortunate and lucky to participate on such event. The celebration generally organized with great festivity and last for three days .
+The day starts with offering of meals to monks and thereafter take refuge in Buddha,Dhamma Sangha,take Panca Sila ,Attha Sila and receive sermon from the monks. 
+The second day is the most hectic day for the host.  After the completion of routine ritual of devotion, sacred Buddha images are taken out in procession and make a round of entire village. 
+On the third day sacred Buddha images along with holy books and sundry necessities are offered to monks. It may be noted that Buddha Rupa Dana is always accompanied with offering of sacred and holy Dhamma books. 
+The ceremony is incomplete without offering of holy Dhamma books. </p>
+<h4><li>Poi Lu Kong-Mu</h4>
+<p>It is a ceremony connected with the offering of Stupa. The Khamtis consider offering of Stupa one of the most wholesome offerings that earn merits. 
+Therefore, construction of Stupa is done by persons of higher moral standard and those who observe precepts and abstain from intoxications of alcohol and drugs.  
+The ceremony is conducted in large scale with great festivity.</p>
+<h4><li>Poi Lu Lik</h4>
+<p>It is ritual of offering of holy books and sacred holy scripts. There is no fixed times for offering of holy books and sacred scripts. 
+Such offering is generally made for good health, to excel in studies, success in employment, trade and so on.</p>
+</div>
+</div>
+<a href="../Festivals/index1.html" class="btn btn-primary">Previous</a></button>
+</div>
+<br>
+<br>
+<a href="javascript:void(0)" class="cd-top cd-is-visible" title="Go to Top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  jQuery(document).ready(function(jQuery){
+  var isExternal = function(url) {
+     return !(location.href.replace("http://", "").replace("https:///", "").split("../index.html")[0] === url.replace("http://", "").replace("https:///", "").split("../index.html")[0]);
+  }
+var comp = new RegExp(location.host);
+jQuery('a').each(function(){
+ if(!comp.test(jQuery(this).attr('href'))){
+   var href = jQuery(this).attr('href');
+     if(typeof href == 'undefined' ){
+        jQuery(this).attr('href','javascript:void(0)');
+        href = '#';
+     }
+     if(href.indexOf('://') > 0 || href.indexOf('//') === 0){
+        if(href!='javascript:void(0);' &&  !href.match("/^\/[a-z0-9]+jQuery/i") && href!='#'  && href!='/' && href!='' && !jQuery(this).hasClass('fancybox.iframe') && !jQuery(this).hasClass('fancybox')){
+        jQuery(this).prop('title', 'External site that opens in a new window');
+         jQuery(this).prop('target', '_blank');
+        }
+     }
+}
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+var offset = 300,
+  offset_opacity = 1200,
+  scroll_top_duration = 700,
+  $back_to_top = jQuery('.cd-top');
+jQuery(window).scroll(function(){
+  ( jQuery(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+  if( jQuery(this).scrollTop() > offset_opacity ) {
+    $back_to_top.addClass('cd-fade-out');
+  }
+});
+$back_to_top.on('click', function(event){
+  event.preventDefault();
+  jQuery('body,html').animate({
+    scrollTop: 0 ,
+    }, scroll_top_duration
+  );
+});
+
+});
+</script>
+<!-------Footer------->
+<section id="footer">
+<footer role="contentinfo">
+<div class="container text-center">
+<nav class="global">
+<ul>
+<li><a href="../Privacy_policy/index.html">PRIVACY POLICY</a></li>
+<li><a href="../index.html#contact">CONTACT</a></li>
+<li><a href="../index.html#gallery">GALLERY</a></li></ul>
+</nav>
+Content owned by Travel Namsai<br>Developed by Bittu Sonar <br><strong>&copy;Travel Namsai <script type="text/JavaScript">
+document.write(new Date().getFullYear());
+</script></strong>
+</div>
+</section>
+<!-------Footer End------->
+<script src="js/smooth-scroll.js"></script>
+<script>
+var scroll=new SmoothScroll('a[href*="#"]');
+</script>
+<script>
+document.addEventListener('contextmenu',function(event){
+event.preventDefault();
+})
+</script>
+</body>
+</html>

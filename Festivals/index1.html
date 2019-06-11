@@ -1,0 +1,157 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Travel Website</title>
+<link rel="stylesheet" href="../css/style2.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-----NavigationBar----->
+<section id="nav-bar">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="../index.html"><i class="fa fa-suitcase" aria-hidden="true"> TRAVEL NAMSAI</i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="../index.html"><i class="fa fa-home" aria-hidden="true"> Home</i></a>
+      </li>
+      <li class="nav-item">
+		<a class="nav-link" href="../index.html#destination"><i class="fa fa-globe" aria-hidden="true"> Destination</i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#activities"><i class="fa fa-tasks" aria-hidden="true"> Activity</i></a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="../index.html#gallery"><i class="fa fa-picture-o" aria-hidden="true"> Gallery</i></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="../index.html#about"><i class="fa fa-user" aria-hidden="true"> About</i></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="../index.html#contact"><i class="fa fa-envelope" aria-hidden="true"> Contact</i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>
+<!------Festivals------>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<br>
+<h4><li>Satang Khao-wa</h4>
+<img src="../Festivals/images/fest8.jpg" class="d-block img-fluid">
+<p><br>Satang Khao-wa is the three-month annual retreat observed by Theravada practitioners. Satang Khao-wa is a Tai Khamti word, 
+it is popularly known as Vassa vaas in Pali language. In English, Vassa is often glossed as Rains Retreat. Taken place during the rainy season,
+Vassa Vaas lasts for three lunar months, usually from July to October. For the duration of Vassa, monks and nuns remain inside monasteries and temple grounds. 
+In some monasteries, monks dedicate the Vassa to intensive meditation. During Satang Khao-wa, lay Buddhist devotees visit temples and abbeys to practice as well, 
+sometimes adopting eight precepts for the day.</p>
+<h4><li>Kathina Civara Dana</h4>
+<img src="../Festivals/images/fest9.jpg" class="d-block img-fluid">
+<p><br>'Kathina Civara Dana' or the 'robe offering ceremony' is held after the conclusion of Vassa Vaas (Rainy Retreat)
+ of Theravada Buddhists when robes are offered to the monks. The ceremony concludes with ritual offering of Kathina Civara (robes) 
+to monks and chanting of prayers for world peace.
+</p>
+<h4><li>Poi Leng</h4>
+<img src="../Festivals/images/fest10.jpg" class="d-block img-fluid">
+<p><br>The Poi-Leng festival popularly known as the Grand Chariot Festival is celebrated to pay obeisance to the departed monks as per
+ Theravada Buddhist traditions. The monks and villagers decide the day to observe the celebration and accordingly a committee is formed
+ to overlook the celebration. The mortal remains of the monks are installed on an artistically designed chariot and pulled by monks and devotees
+ on either side thus symbolizing the participation in the last journey of the departed monks. Their mortal remains are embalmed using wax and tobacco
+ for preservation before being kept in the coffin. Later it is kept in a makeshift stilt hut called the Kyong-Niban till the commencement of the festival.
+ On the day of festival, the mortal remains of the monks are brought out from the Kyong-Niban and installed on the chariot (catafalque). 
+ After that a mass prayer is held before the chariot.</p>
+<h4><li>Poi Pee Mau</h4>
+<img src="../Festivals/images/fest11.jpg" class="d-block img-fluid">
+<p><br>
+Poi Pee Mau - a New Year festival- is the celebration of the advent of a new dawn for the Tai community to usher a 
+fresh era of socio-cultural development and is of paramount importance in uniting all Tai's. The festival represents the cultural ethos,
+providing sustenance to it and ultimately promotes tourism and provides continuity to customs, tradition and culture. 
+It is a celebration of oneness and a symbol to disseminate the rich cultural heritage and exotic cuisine of the Tai’s to the world.
+</p>
+</div>
+</div>
+<a href="../Festivals/index1.html" class="btn btn-primary">Previous</a></button>
+<a href="../Festivals/index2.html" class="btn btn-primary">Next</a></button>
+</div>
+<br>
+<br>
+<a href="javascript:void(0)" class="cd-top cd-is-visible" title="Go to Top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  jQuery(document).ready(function(jQuery){
+  var isExternal = function(url) {
+     return !(location.href.replace("http://", "").replace("https:///", "").split("../index.html")[0] === url.replace("http://", "").replace("https:///", "").split("../index.html")[0]);
+  }
+var comp = new RegExp(location.host);
+jQuery('a').each(function(){
+ if(!comp.test(jQuery(this).attr('href'))){
+   var href = jQuery(this).attr('href');
+     if(typeof href == 'undefined' ){
+        jQuery(this).attr('href','javascript:void(0)');
+        href = '#';
+     }
+     if(href.indexOf('://') > 0 || href.indexOf('//') === 0){
+        if(href!='javascript:void(0);' &&  !href.match("/^\/[a-z0-9]+jQuery/i") && href!='#'  && href!='/' && href!='' && !jQuery(this).hasClass('fancybox.iframe') && !jQuery(this).hasClass('fancybox')){
+        jQuery(this).prop('title', 'External site that opens in a new window');
+         jQuery(this).prop('target', '_blank');
+        }
+     }
+}
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+var offset = 300,
+  offset_opacity = 1200,
+  scroll_top_duration = 700,
+  $back_to_top = jQuery('.cd-top');
+jQuery(window).scroll(function(){
+  ( jQuery(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+  if( jQuery(this).scrollTop() > offset_opacity ) {
+    $back_to_top.addClass('cd-fade-out');
+  }
+});
+$back_to_top.on('click', function(event){
+  event.preventDefault();
+  jQuery('body,html').animate({
+    scrollTop: 0 ,
+    }, scroll_top_duration
+  );
+});
+
+});
+</script>
+<!-------Footer------->
+<section id="footer">
+<footer role="contentinfo">
+<div class="container text-center">
+<nav class="global">
+<ul>
+<li><a href="../Privacy_policy/index.html">PRIVACY POLICY</a></li>
+<li><a href="../index.html#contact">CONTACT</a></li>
+<li><a href="../index.html#gallery">GALLERY</a></li></ul>
+</nav>
+Content owned by Travel Namsai<br>Developed by Bittu Sonar <br><strong>&copy;Travel Namsai <script type="text/JavaScript">
+document.write(new Date().getFullYear());
+</script></strong>
+</div>
+</section>
+<!-------Footer End------->
+<script src="js/smooth-scroll.js"></script>
+<script>
+var scroll=new SmoothScroll('a[href*="#"]');
+</script>
+<script>
+document.addEventListener('contextmenu',function(event){
+event.preventDefault();
+})
+</script>
+</body>
+</html>

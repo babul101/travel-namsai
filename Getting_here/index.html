@@ -1,0 +1,138 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Travel Website</title>
+<link rel="stylesheet" href="../css/style5.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-----NavigationBar----->
+<section id="nav-bar">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="../index.html"><i class="fa fa-suitcase" aria-hidden="true"> TRAVEL NAMSAI</i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="../index.html"><i class="fa fa-home" aria-hidden="true"> Home</i></a>
+      </li>
+      <li class="nav-item">
+		<a class="nav-link" href="../index.html#destination"><i class="fa fa-globe" aria-hidden="true"> Destination</i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#activities"><i class="fa fa-tasks" aria-hidden="true"> Activity</i></a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="../index.html#gallery"><i class="fa fa-picture-o" aria-hidden="true"> Gallery</i></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="../index.html#about"><i class="fa fa-user" aria-hidden="true"> About</i></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="../index.html#contact"><i class="fa fa-envelope" aria-hidden="true"> Contact</i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>
+<!-------Getting------->
+<section id="getting">
+<div class="container">
+<div class="col-md-12">
+<h2>Getting Here</h2>
+<hr color="black">
+<div class="getting-content">
+<p><strong>Namsai</strong> is the headquarters of Namsai district in the Indian state of Arunachal Pradesh. 
+This place is one of the 60 constituencies of Arunachal. The creation of Namsai district was approved by the Arunachal Pradesh 
+government of Nabam Tuki on 21 March 2013. On 25 November 2014, the Namsai subdivision of Lohit district was declared tobe new 
+district of Arunachal Pradesh, the 18th district of the state.</p> 
+<p>Lying near the Dihing river, the township received a major boost when the much awaited bridge over the river 
+was inaugurated in March 2002. The bridge is 660.37m long and recently it came to the 2nd position in Arunachal Pradesh 
+after the inauguration of Parasuram Bridge, which is 85 km ahead of Namsai. Some 30 km to the east lies the Diyun Town. 
+The road to Diyun takes a turn from the NH52. This road was developed by Oil India Limited which is still 
+functioning although its worsening with each year. Just 75 km from Tinsukia Town, the major railway station, 
+Namsai is fast developing as a township.<p>
+<p>The <strong>Golden Pagoda Monastery</strong> at Tengapani at Namsai district is a major tourist destination. Known as 'Kongmu Kham' 
+in the local Tai-Khamti language, Golden Pagoda is one of the largest Buddhist monasteries in North East India.</p>
+<p>Namsai has an All India Radio Relay station known as Akashvani Namsai. It broadcasts on FM frequencies.</p>
+</div>
+</div>
+</div>
+<a href="javascript:void(0)" class="cd-top cd-is-visible" title="Go to Top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  jQuery(document).ready(function(jQuery){
+  var isExternal = function(url) {
+     return !(location.href.replace("http://", "").replace("https:///", "").split("../index.html")[0] === url.replace("http://", "").replace("https:///", "").split("../index.html")[0]);
+  }
+var comp = new RegExp(location.host);
+jQuery('a').each(function(){
+ if(!comp.test(jQuery(this).attr('href'))){
+   var href = jQuery(this).attr('href');
+     if(typeof href == 'undefined' ){
+        jQuery(this).attr('href','javascript:void(0)');
+        href = '#';
+     }
+     if(href.indexOf('://') > 0 || href.indexOf('//') === 0){
+        if(href!='javascript:void(0);' &&  !href.match("/^\/[a-z0-9]+jQuery/i") && href!='#'  && href!='/' && href!='' && !jQuery(this).hasClass('fancybox.iframe') && !jQuery(this).hasClass('fancybox')){
+        jQuery(this).prop('title', 'External site that opens in a new window');
+         jQuery(this).prop('target', '_blank');
+        }
+     }
+}
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+var offset = 300,
+  offset_opacity = 500,
+  scroll_top_duration = 400,
+  $back_to_top = jQuery('.cd-top');
+jQuery(window).scroll(function(){
+  ( jQuery(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+  if( jQuery(this).scrollTop() > offset_opacity ) {
+    $back_to_top.addClass('cd-fade-out');
+  }
+});
+$back_to_top.on('click', function(event){
+  event.preventDefault();
+  jQuery('body,html').animate({
+    scrollTop: 0 ,
+    }, scroll_top_duration
+  );
+});
+
+});
+</script>
+<!-------Footer------->
+<section id="footer">
+<footer role="contentinfo">
+<div class="container text-center">
+<nav class="global">
+<ul>
+<li><a href="../Privacy_policy/index.html">PRIVACY POLICY</a></li>
+<li><a href="../index.html#contact">CONTACT</a></li>
+<li><a href="../index.html#gallery">GALLERY</a></li></ul>
+</nav>
+Content owned by Travel Namsai<br>Developed by Bittu Sonar <br><strong>&copy;Travel Namsai <script type="text/JavaScript">
+document.write(new Date().getFullYear());
+</script></strong>
+</div>
+</section>
+<!-------Footer End------->
+<script src="js/smooth-scroll.js"></script>
+<script>
+var scroll=new SmoothScroll('a[href*="#"]');
+</script>
+<script>
+document.addEventListener('contextmenu',function(event){
+event.preventDefault();
+})
+</script>
+</body>
+</html>

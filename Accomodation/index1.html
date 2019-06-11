@@ -1,0 +1,175 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Travel Website</title>
+<link rel="stylesheet" href="../css/style4a.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-----NavigationBar----->
+<section id="nav-bar">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="../index.html"><i class="fa fa-suitcase" aria-hidden="true"> TRAVEL NAMSAI</i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="../index.html"><i class="fa fa-home" aria-hidden="true"> Home</i></a>
+      </li>
+      <li class="nav-item">
+		<a class="nav-link" href="../index.html#destination"><i class="fa fa-globe" aria-hidden="true"> Destination</i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#activities"><i class="fa fa-tasks" aria-hidden="true"> Activity</i></a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="../index.html#gallery"><i class="fa fa-picture-o" aria-hidden="true"> Gallery</i></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="../index.html#about"><i class="fa fa-user" aria-hidden="true"> About</i></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="../index.html#contact"><i class="fa fa-envelope" aria-hidden="true"> Contact</i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>
+<!-------Accomodation------->
+<section id="accomodation">
+<div class="container">
+<div class="row">
+<div class="col-md-8">
+<h6>ACCOMODATION:</h6>
+<h1>GOLDEN PAGODA ECO RESORT</h1>
+<div class="place-rating">
+<div class="inner" style="width:92px">
+4.6/5
+</div>
+</div>
+<div class="ratings-count" data-pluralize="rating" data-pluralize-count="5">4.6 good based on 21 reviews
+</div>
+<div class="accomodation-content">
+<p>The Golden Pagoda Eco Resort is spread atop a hillock, Noi-Cheynam just off NH 52 at Tengapani in Namsai district,
+Arunachal Pradesh, India. It is adjacent to the Golden Pagoda (Kongmu Kham) over an area amidst pristine forests while 
+the Tengapani river flows nearby. The ambience is of serenity,spiritual and lots more only experience can let you know. 
+The buildings of the resort are in almost a semi circular order which lets our guests wake up every morning to the awe 
+inspiring sight of the Golden Pagoda. The resort also has a central garden dotted with fruit and exotic plants.</p>
+<p>
+</p>
+<p>For Booking and other details visit the Golden Pagoda Eco Resort Official Website: <a href="http://goldenpagodaecoresort.com/" target="_blank" rel="noreferrer noopener">www.goldenpagodaecoresort.com</a></p>
+<div class="listing">
+<h4>Amenities</h4>
+<ul>
+<li>VIP Suites</li>
+<li>LED TV</li>
+<li>Tea Maker</li>
+<li>Balcony</li>
+<li>Lounge</li>
+<li>Onsite Parking</li>
+<li>Onsite Dining</li>
+<li>Cottages</li>
+<li>Geyser</li>
+<li>Conference Hall</li>
+<li>Travel Desk</li>
+<li>Riverfront</li>
+<li>Banquet Hall</li>
+<li>Pet Friendly</li>
+<li>Garden</li>
+<li>Power backup facility</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<section id="address">
+<p><h6>Golden Pagoda Eco Resort</h6></p>
+<p>Tengapani,Namsai</p>
+<p>Arunachal Pradesh,792103</p>
+<p><i class="fa fa-phone" aria-hidden="true"></i>
+<a href="tel:8730081650">+91 87300-81650</a></p>
+<p><i class="fa fa-phone" aria-hidden="true"></i>
+<a href="tel:9402788362">+91 94027-88362</a></p>
+<div class="icon">
+<i class="fa fa-map-marker"><a href="https://www.google.com/maps/d/u/0/embed?mid=1on2Fx0_Kae_uoIwtmr1oZGULkltHX7ON" target="blank"> View on Map</a></i>
+</div>
+</section>
+</section>
+<a href="javascript:void(0)" class="cd-top cd-is-visible" title="Go to Top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  jQuery(document).ready(function(jQuery){
+  var isExternal = function(url) {
+     return !(location.href.replace("http://", "").replace("https:///", "").split("../index.html")[0] === url.replace("http://", "").replace("https:///", "").split("../index.html")[0]);
+  }
+var comp = new RegExp(location.host);
+jQuery('a').each(function(){
+ if(!comp.test(jQuery(this).attr('href'))){
+   var href = jQuery(this).attr('href');
+     if(typeof href == 'undefined' ){
+        jQuery(this).attr('href','javascript:void(0)');
+        href = '#';
+     }
+     if(href.indexOf('://') > 0 || href.indexOf('//') === 0){
+        if(href!='javascript:void(0);' &&  !href.match("/^\/[a-z0-9]+jQuery/i") && href!='#'  && href!='/' && href!='' && !jQuery(this).hasClass('fancybox.iframe') && !jQuery(this).hasClass('fancybox')){
+        jQuery(this).prop('title', 'External site that opens in a new window');
+         jQuery(this).prop('target', '_blank');
+        }
+     }
+}
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+var offset = 200,
+  offset_opacity = 500,
+  scroll_top_duration = 500,
+  $back_to_top = jQuery('.cd-top');
+jQuery(window).scroll(function(){
+  ( jQuery(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+  if( jQuery(this).scrollTop() > offset_opacity ) {
+    $back_to_top.addClass('cd-fade-out');
+  }
+});
+$back_to_top.on('click', function(event){
+  event.preventDefault();
+  jQuery('body,html').animate({
+    scrollTop: 0 ,
+    }, scroll_top_duration
+  );
+});
+
+});
+</script>
+<!-------Footer------->
+<section id="footer">
+<footer role="contentinfo">
+<div class="container text-center">
+<nav class="global">
+<ul>
+<li><a href="../Privacy_policy/index.html">PRIVACY POLICY</a></li>
+<li><a href="../index.html#contact">CONTACT</a></li>
+<li><a href="../index.html#gallery">GALLERY</a></li></ul>
+</nav>
+Content owned by Travel Namsai<br>Developed by Bittu Sonar <br><strong>&copy;Travel Namsai <script type="text/JavaScript">
+document.write(new Date().getFullYear());
+</script></strong>
+</div>
+</section>
+<!-------Footer End------->
+<script src="js/smooth-scroll.js"></script>
+<script>
+var scroll=new SmoothScroll('a[href*="#"]');
+</script>
+<script>
+document.addEventListener('contextmenu',function(event){
+event.preventDefault();
+})
+</script>
+</body>
+</html>
